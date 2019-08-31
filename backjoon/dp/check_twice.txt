@@ -1,0 +1,8 @@
+9465
+2156 -> hint : f(n) = f(n-2)+d[n] or f(n-3)+d[n-1]+d[n] or ?(there is one other case)
+11054 -> hint : bitonic squence consists of one increasing squence starting with left end, and another increasing squence starting with right end. Be careful for overlapping index. 
+1912 -> hint : f(n) = f(n-1)+d[n] < d[n] ? d[n] : f(n-1)+d[n]
+1699 -> hint : f(n) = (For any integer i that satisfy 1<=i^2<=n), f(n) = f(n-i^2) + 1
+2133 -> hint : f(n) = 3*f(n-2) + <some other cases are exist>
+2225 -> hint : if you cannot find recursion equation, make a table which have all cases
+11052 -> hint : f(n) = (for all integer j that satisfy 1<=j<=n), f(n) = f(n-j) + d[j];
