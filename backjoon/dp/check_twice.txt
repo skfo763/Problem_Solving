@@ -6,3 +6,4 @@
 2133 -> hint : f(n) = 3*f(n-2) + <some other cases are exist>
 2225 -> hint : if you cannot find recursion equation, make a table which have all cases
 11052 -> hint : f(n) = (for all integer j that satisfy 1<=j<=n), f(n) = f(n-j) + d[j];
+2565 -> hint : think reversely, not eleminating, just adding from empty state.
