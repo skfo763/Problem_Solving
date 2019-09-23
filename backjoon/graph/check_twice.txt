@@ -1,0 +1,1 @@
+1707 -> if color is different when search level is same, it is not a bipartite graph.

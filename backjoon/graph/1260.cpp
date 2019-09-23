@@ -65,10 +65,10 @@ int main(void) {
 	cout << endl;
 	queue<int> q;
 	q.push(st);
-	graph[st].visited = true;
 
 	while(!q.empty()) {
 		Vertex visit = graph[q.front()];
+		graph[q.front].visited = true;
 		cout << q.front() << " ";
 		
 		sort(visit.v.begin(), visit.v.end());
@@ -77,7 +77,6 @@ int main(void) {
 
 			if(graph[pos].visited == false) {
 				q.push(pos);
-				graph[pos].visited = true;
 			}
 		}
 		q.pop();
