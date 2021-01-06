@@ -1,21 +1,10 @@
-def get_left_index(data, curr, dist):
-    return (curr + dist) % len(data)
-
-
 people_count, distance = list(map(int, input().split()))
 circular_list = [i + 1 for i in range(people_count)]
-curr_index = 0
-delete_index = distance - 1
 result = []
+delete_index = 0
 
 for i in range(len(circular_list)):
-    if i == 0:
-        item = circular_list.pop(delete_index)
-        curr_index = delete_index
-    else:
-        item = circular_list.pop(get_left_index(circular_list, curr_index, delete_index))
-        curr_index = delete_index - 1
-    result.append(item)
+    delete_index = (delete_index + distance - 1) % len(circular_list)
+    result.append(str(circular_list.pop(delete_index)))
 
-
-print(result)
+print("<%s>" % (", ".join(result)))
