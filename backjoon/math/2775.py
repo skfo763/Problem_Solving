@@ -1,0 +1,1 @@
+apart = [[0]*15 for _ in range(15)]
